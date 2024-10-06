@@ -1,0 +1,237 @@
+       /* Basic styling */
+       body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+        overflow: hidden; /* Hide the default scrollbar */
+    }
+
+    /* Header styling */
+    header {
+        background-color: #111;
+        padding: 20px;
+        text-align: center;
+        font-size: 2em;
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .videos-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; /* Align items to start */
+        height: 100vh;
+        overflow-y: scroll; /* Enable scrolling for video feed */
+        scroll-snap-type: y mandatory; /* Snap to videos when scrolling */
+        padding-top: 100px; /* Adjust padding-top to account for the header height */
+        box-sizing: border-box;
+    }
+
+    .video-item {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1200px;
+        height: auto; /* Adjust height based on content */
+        margin-bottom: 20px; /* Space between videos */
+        padding: 20px;
+        box-sizing: border-box;
+        background: #111;
+        border-radius: 8px;
+    }
+
+    .video-wrapper {
+        width: 60%; /* Video takes up 60% of the width */
+        max-height: 400px; /* Limit the height of the video */
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+        background: #000;
+        position: relative;
+        margin-right: 20px; /* Space between video and info */
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Maintain the video’s aspect ratio */
+        border-radius: 8px;
+    }
+
+    .info-wrapper {
+        width: 40%; /* Information takes up 40% of the width */
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uploader-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px; /* Space below the profile picture */
+    }
+
+    .uploader-info img {
+        width: 80px; /* Adjust as needed */
+        height: 80px; /* Adjust as needed */
+        border-radius: 50%;
+        margin-bottom: 10px; /* Space below the profile picture */
+    }
+
+    .video-info {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 15px; /* Space below the details */
+    }
+
+    .caption {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .upload-date {
+        font-size: 0.9em;
+        color: #ccc;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Space between buttons */
+    }
+
+    .button-container button {
+        background-color: #444;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .button-container button:hover {
+        background-color: #666;
+    }
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.85); /* Dark background for focus */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content styling */
+.modal-content {
+    background-color: #ffffff; /* White background for clarity and focus */
+    margin: 10% auto; /* Adjusted margin for better centering */
+    padding: 30px; /* Increased padding */
+    border: none; /* Remove default border */
+    border-radius: 12px; /* More rounded corners */
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 600px; /* Maximum width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    color: #333; /* Darker text for readability */
+}
+
+/* Close button styling */
+.close {
+    color: #ff5e57; /* Red color to signify close action */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.close:hover,
+.close:focus {
+    color: #c0392b; /* Darker red on hover for emphasis */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Additional styling for form elements */
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin: 10px 0; /* Consistent spacing */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 6px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for inputs */
+    color: #333; /* Dark text color for input */
+    font-size: 1em;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+    border-color: #2980b9; /* Blue border on focus for active elements */
+}
+
+/* Button styling */
+.modal-content button {
+    background-color: #2980b9; /* Blue color for action button (e.g., Submit, Pay) */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    width: 100%; /* Full width button */
+}
+
+.modal-content button:hover {
+    background-color: #1f6d99; /* Darker blue on hover for emphasis */
+}
+
+/* Message to display the bill info */
+#billinfoDisplay {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #2980b9; /* Blue to draw attention to important info */
+}
+
+#modal-billinfo {
+    font-weight: bold;
+    color: #27ae60; /* Green for highlighting bill info indicating positivity or action */
+}
+
+
+    /* Hide scrollbar for WebKit browsers */
+    .videos-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    .videos-container {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }

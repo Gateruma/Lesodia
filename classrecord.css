@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */
+    
+}
+/* Button Styles */
+.dashboard,
+.classrecord,
+.myprofile, .class {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    text-align: center; /* Center align text */
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 8%; /* Adjusted width */
+    height: 4%; /* Adjusted height */
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 4%; /* Match height of the button */
+    padding: 0; /* Remove padding */
+}
+
+.dashboard {
+    top: 18%;
+    left: 4%;
+    background-color: #f9dddd;
+}
+
+.classrecord {
+    top: 18%;
+    left: 14%;
+    background-color: #f9dddd;
+}
+
+
+.class {
+    top: 18%;
+    left: 24%;
+    background-color: #f9dddd;
+}
+
+.myprofile {
+    top: 18%;
+    right: 1%;
+    background-color: #9CDBC8;
+}
+
+/* Button Hover and Active States */
+.dashboard:hover,
+.myprofile:hover,
+.class:hover  {
+    color: #fff;
+    background-color: #F6CC84;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.dashboard:active,
+.classrecord:active,
+.myprofile:active
+.class:hover {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Button Disabled State */
+.dashboard:disabled,
+.classrecord:disabled,
+.myprofile:disabled, .class:disabled {
+    pointer-events: none;
+}
+.nosubj {
+    font-size: 16px;
+    color: red;
+}
+
+.classrecord {
+    color: #fff; /* Change text color to white */
+    background-color: #F6CC84; /* Change background color */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; /* Add box shadow */
+    transform: translateY(-2px); /* Move button slightly up */
+}
+
+.line {
+    background-color: #f49191;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    height: 70px;
+    text-align: start;
+    line-height: 50px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.addbutton {
+    background-color: white;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 10%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+/* Add a container for the table */
+.table-container {
+    position: absolute;            /* Keep the table positioned relative to the viewport */
+    top: 33%;                      /* Maintain vertical placement */
+    left: 50%;                     /* Center horizontally */
+    transform: translateX(-50%);  /* Correct horizontal centering */
+    width: 60%;                    /* Set a fixed width for the container */
+    max-width: 800px;              /* Limit max width for larger screens */
+    min-width: 400px;              /* Set a minimum width for smaller screens */
+    margin: 0 auto;                /* Center the container horizontally */
+    padding: 10px;                 /* Optional: padding for better spacing */
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px; /* Shadow for better visibility */
+}
+
+/* Adjust table styles */
+table {
+    border-radius: 20px;
+    border-collapse: collapse;
+    width: 100%;                   /* Ensure table fills its container */
+    font-size: 20px;
+    overflow-y: auto;              /* Add vertical scrollbar if content exceeds max height */
+    z-index: 1;                    /* Set a positive z-index for visibility */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;       /* Optional: add background color */
+    padding: 20px;                 /* Optional: padding for better spacing */
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px; /* Shadow for the table */
+}
+
+/* Modal styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 60%;
+    margin: 10% auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}

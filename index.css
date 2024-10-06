@@ -1,0 +1,707 @@
+
+*{
+    margin:0;
+    padding:0;
+} 
+
+
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 2px 20px rgba(6, 8, 1, 0.6);
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+
+.header img {
+    width: 350px; /* Adjust the width of the image */
+    height: 100px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */
+    
+}
+
+.headerbutton11 { 
+    background-color: #A66868;
+    color: rgb(220, 221, 220);
+    position: absolute;
+    font-size: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 35%; 
+    width: 90px;
+    height: 40%;
+    z-index: 2;
+    right: 5vw; 
+    border-radius: 10px;
+    display: flex; /* Add flex container */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    cursor:pointer;
+}
+
+/*
+.headerbutton,{ 
+    background-color: #A66868;
+    color: rgb(220, 221, 220);
+    font-weight: bold;
+    padding: 1.5vw 3vw;
+    position: fixed;
+    top: 2vw; 
+    z-index: 2;
+}*/
+.user{
+    width: 250px; 
+    padding: 130px;
+    position: absolute;
+    top: 500px;
+    left: 33.3px;
+
+}
+.user1{
+    width: 250px; 
+    padding: 130px;
+    position: absolute;
+    top: 500px;
+    left: 35%;
+}
+
+.user2{
+    width: 250px; 
+    padding: 130px;
+    position: absolute;
+    top: 500px;
+    right: 33.3px;
+    
+}
+
+
+
+.klasemologo{
+    width: 200px; 
+    padding: 130px;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+}
+.klasemotext{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    font-weight: bold;
+}
+.klasemocontainer {
+    width: 1000px;
+    position: absolute;
+    left: 450px;
+    top: 250px;
+    font-size: 1.50em;
+    font-family: 'Rubik', sans-serif; /* Adding font-family */
+}
+
+.teacher {
+    width: 20%; 
+    position: absolute;
+    top: 900px; 
+    left: 130px; /* Adjusted the left position */
+    font-family: 'Rubik', sans-serif; /* Adding font-family */
+
+}
+
+.student {
+    width: 20%; 
+    max-width: 1000px; 
+    position: absolute;
+    top: 900px; 
+    right: 550px; /* Adjusted the left position */
+    font-family: 'Rubik', sans-serif; /* Adding font-family */
+
+}
+
+.parent {
+    width: 300px;
+    position: absolute;
+    top: 900px; 
+    left: 1100px; /* Adjusted the left position */
+    font-family: 'Rubik', sans-serif; /* Adding font-family */
+
+}
+
+.button {
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 930px; 
+    left: 180px; /* Adjusted the left position */
+    cursor:pointer;
+    font-family: 'Rubik', sans-serif; /* Adding font-family */
+
+}
+
+.button1 {
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 930px; 
+    right: 655px; /* Adjusted the left position */
+    cursor:pointer;
+    font-family: 'Rubik', sans-serif; /* Adding font-family */
+
+}
+
+.button2 {
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 930px; 
+    left: 1155px; /* Adjusted the left position */
+    cursor:pointer;
+    font-family: 'Rubik', sans-serif; /* Adding font-family */
+
+}
+
+
+
+
+@media (max-width: 500px) {
+    .headerbutton{
+        padding: 10px 10px;
+        top:36px;
+    }
+
+    .headerbutton1{
+        padding: 10px 10px; 
+        top:36px;
+        right: 90px;
+    }
+
+}
+
+@media (min-width: 740px) and (max-width: 1490px) {
+    /* klasemocontainer */
+    .klasemocontainer {
+    font-size: 1em;
+    width: 70%;
+    top: 35%;
+    margin-bottom: 40px;
+    left: 17%;
+    font-size: 23px;
+    
+    }
+    
+    .klasemologo {
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    
+    /* teacher */
+    .user, .teacher, .button {
+    width: 200px;
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+    }
+    
+    .user {
+    top: 750px;
+    width: 350px;
+    }
+    
+    .teacher {
+    top: 1230px;
+    left: calc(50% - 10px);
+    }
+    
+    .button {
+    top: 1300px;
+    left: calc(50% - 10px);
+    }
+    
+    /* student */
+    .user1, .student, .button1 {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    
+    .user1 {
+    top: 1300px;
+    width: 350px;
+    
+    }
+    
+    .student {
+    top: 1780px;
+    left: calc(50% - 10px);
+    }
+    
+    .button1 {
+    top: 1840px;
+    left: calc(50% - 10px);
+    }
+    
+    /* parent */
+    .user2, .parent, .button2 {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    
+    .user2 {
+    top: 1850px;
+    width: 350px;
+    
+    }
+    
+    .parent {
+    top: 2340px;
+    left: calc(50% - 10px);
+    }
+    
+    .button2 {
+    top: 2400px;
+    left: calc(50% - 10px);
+    }
+    
+    /* header */
+    .header {
+    font-size: 30px;
+    }
+    .headerbutton, .headerbutton1 {
+    padding: 10px 20px;
+    top:46px;
+    }
+    
+    
+    
+    }
+
+@media (max-width: 739px){
+    /* klasemocontainer */
+    .klasemocontainer {
+    font-size: 1em;
+    width: 70%;
+    top: 35%;
+    margin-bottom: 40px;
+    left: 17%;
+    font-size: 23px;
+    
+    }
+    
+    .klasemologo {
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    
+    /* teacher */
+    .user, .teacher, .button {
+    width: 200px;
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+    }
+    
+    .user {
+    top: 850px;
+    width: 350px;
+    }
+    
+    .teacher {
+    top: 1330px;
+    left: calc(50% - 10px);
+    }
+    
+    .button {
+    top: 1400px;
+    left: calc(50% - 10px);
+    }
+    
+    /* student */
+    .user1, .student, .button1 {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    
+    .user1 {
+    top: 1400px;
+    width: 350px;
+    
+    }
+    
+    .student {
+    top: 1880px;
+    left: calc(50% - 10px);
+    }
+    
+    .button1 {
+    top: 1940px;
+    left: calc(50% - 10px);
+    }
+    
+    /* parent */
+    .user2, .parent, .button2 {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    
+    .user2 {
+    top: 1950px;
+    width: 350px;
+    
+    }
+    
+    .parent {
+    top: 2440px;
+    left: calc(50% - 10px);
+    }
+    
+    .button2 {
+    top: 2500px;
+    left: calc(50% - 10px);
+    }
+    
+    /* header */
+    .header {
+    font-size: 30px;
+    }
+    .headerbutton, .headerbutton1 {
+    padding: 10px 20px;
+    top:46px;
+    }
+    
+    
+    
+    }
+
+@media (max-width: 639px){
+    /* klasemocontainer */
+    .klasemocontainer {
+    font-size: 1em;
+    width: 70%;
+    top: 35%;
+    margin-bottom: 40px;
+    left: 17%;
+    font-size: 23px;
+    
+    }
+    
+    .klasemologo {
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    
+    /* teacher */
+    .user, .teacher, .button {
+    width: 200px;
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+    }
+    .user {
+        top: 950px;
+        width: 350px;
+    }
+    
+    .teacher {
+        top: 1430px;
+        left: calc(50% - 10px);
+    }
+    
+    .button {
+        top: 1500px;
+        left: calc(50% - 10px);
+    }
+    
+    /* student */
+    .user1, .student, .button1 {
+        width: 200px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .user1 {
+        top: 1500px;
+        width: 350px;
+    }
+    
+    .student {
+        top: 1980px;
+        left: calc(50% - 10px);
+    }
+    
+    .button1 {
+        top: 2040px;
+        left: calc(50% - 10px);
+    }
+    
+    /* parent */
+    .user2, .parent, .button2 {
+        width: 200px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .user2 {
+        top: 2050px;
+        width: 350px;
+    }
+    
+    .parent {
+        top: 2540px;
+        left: calc(50% - 10px);
+    }
+    
+    .button2 {
+        top: 2600px;
+        left: calc(50% - 10px);
+    }
+    
+    /* header */
+    .header {
+    font-size: 30px;
+    }
+    .headerbutton, .headerbutton1 {
+    padding: 10px 20px;
+    top:46px;
+    }
+    
+    
+    
+    }
+
+@media (max-width: 510px){
+        /* klasemocontainer */
+        .klasemocontainer {
+        font-size: 1em;
+        width: 70%;
+        top: 35%;
+        margin-bottom: 40px;
+        left: 17%;
+        font-size: 23px;
+        
+        }
+        
+        .klasemologo {
+        width: 200px;
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        }
+        
+/* teacher */
+.user, .teacher, .button {
+    width: 200px;
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+}
+
+.user {
+    top: 1100px; /* increased by 150px */
+    width: 350px;
+}
+
+.teacher {
+    top: 1580px; /* increased by 150px */
+    left: calc(50% - 10px);
+}
+
+.button {
+    top: 1650px; /* increased by 150px */
+    left: calc(50% - 10px);
+}
+
+/* student */
+.user1, .student, .button1 {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user1 {
+    top: 1650px; /* increased by 150px */
+    width: 350px;
+}
+
+.student {
+    top: 2130px; /* increased by 150px */
+    left: calc(50% - 10px);
+}
+
+.button1 {
+    top: 2190px; /* increased by 150px */
+    left: calc(50% - 10px);
+}
+
+/* parent */
+.user2, .parent, .button2 {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user2 {
+    top: 2160px; /* increased by 150px */
+    width: 350px;
+}
+
+.parent {
+    top: 2650px; /* increased by 150px */
+    left: calc(50% - 10px);
+}
+        .button2 {
+            top: 2700px;
+            left: calc(50% - 10px);
+        }
+        
+        /* header */
+        .header {
+        font-size: 30px;
+        }
+        .headerbutton, .headerbutton1 {
+        padding: 10px 20px;
+        top:46px;
+        }
+        
+        
+        
+        }
+    
+@media (max-width: 425px) {
+            /* klasemocontainer */
+            .klasemocontainer {
+                font-size: 1em;
+                width: 70%;
+                top: 35%; /* increased by 10% */
+                margin-bottom: 40px;
+                left: 17%;
+                font-size: 23px;
+            }
+        
+            .klasemologo {
+                width: 200px;
+                position: absolute;
+                top: 70px; /* increased by 100px */
+                left: 50%;
+                transform: translateX(-50%);
+            }
+/* teacher */
+.user, .teacher, .button {
+    width: 200px;
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+}
+
+.user {
+    top: 1300px; /* increased by 100px */
+    width: 350px;
+}
+
+.teacher {
+    top: 1780px; /* increased by 100px */
+    left: calc(50% - 10px);
+}
+
+.button {
+    top: 1850px; /* increased by 100px */
+    left: calc(50% - 10px);
+}
+
+/* student */
+.user1, .student, .button1 {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user1 {
+    top: 1850px; /* increased by 100px */
+    width: 350px;
+}
+
+.student {
+    top: 2330px; /* increased by 100px */
+    left: calc(50% - 10px);
+}
+
+.button1 {
+    top: 2390px; /* increased by 100px */
+    left: calc(50% - 10px);
+}
+
+/* parent */
+.user2, .parent, .button2 {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user2 {
+    top: 2395px; /* increased by 100px */
+    width: 350px;
+}
+
+.parent {
+    top: 2890px; /* increased by 100px */
+    left: calc(50% - 10px);
+}
+
+.button2 {
+    top: 2950px; /* increased by 100px */
+    left: calc(50% - 10px);
+}
+
+        /* header */
+        .header {
+            font-size: 30px;
+            }
+            .headerbutton, .headerbutton1 {
+            padding: 10px 20px;
+            top:46px;
+            }
+            
+        }
+@media (max-width: 1480px) {
+    .klasemologo{
+        display: none;
+    }
+
+}
+

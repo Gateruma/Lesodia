@@ -1,0 +1,296 @@
+
+*{
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */ 
+}
+
+.box1 {
+    position: absolute;
+    border-radius: 10px;
+    top: 40%;
+    width: 42%;
+    height: 30%;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 7%;
+    border: black solid;
+    background-color: #9AD0C2;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.box2 {
+    position: absolute;
+    border-radius: 10px;
+    top: 40%;
+    width: 42%;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30%;
+    right: 7%;
+    border: black solid;
+    background-color: #9AD0C2;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.box3 {
+    position: absolute;
+    top: 74%;
+    width: 42%;
+    height: 30%;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 7%;
+    border-radius: 10px;
+    border: black solid;
+    background-color: #D9D9D9;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.box4{
+    position: absolute;
+    top: 74%;
+    width: 42%;
+    font-size: 60px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30%;
+    right: 7%;
+    border: black solid;
+    background-color: #D9D9D9;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.box5{
+    position: absolute;
+    top: 109%;
+    width: 42%;
+    font-size: 60px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30%;
+    left: 7%;
+    border: black solid;
+    background-color: #D9D9D9;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.box6{
+    position: absolute;
+    top: 109%;
+    width: 42%;
+    font-size: 60px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30%;
+    right: 7%;
+    border: black solid;
+    background-color: #D9D9D9;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.boxer{
+    position: absolute;
+    top: 28%;
+    width: 42%;
+    font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30%;
+    left: 5%;
+}
+/* Button Styles */
+.dashboard,
+.classrecord,
+.myprofile, .myservice, .class {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    text-align: center; /* Center align text */
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 8%; /* Adjusted width */
+    height: 4%; /* Adjusted height */
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 4%; /* Match height of the button */
+    padding: 0; /* Remove padding */
+}
+
+.dashboard {
+    top: 18%;
+    left: 4%;
+    background-color: #f9dddd;
+}
+
+.classrecord {
+    top: 18%;
+    left: 14%;
+    background-color: #f9dddd;
+}
+
+
+.class {
+    top: 18%;
+    left: 24%;
+    background-color: #f9dddd;
+}
+
+.myprofile {
+    top: 18%;
+    right: 1%;
+    background-color: #9CDBC8;
+}
+
+.myservice {
+    top: 18%;
+    right: 10%;
+    background-color: #9CDBC8;
+}
+
+/* Button Hover and Active States */
+.dashboard:hover,
+.classrecord:hover,
+.myprofile:hover,
+.myservice:hover,
+.class:hover  {
+    color: #fff;
+    background-color: #F6CC84;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.dashboard {
+    color: #fff; /* Change text color to white */
+    background-color: #F6CC84; /* Change background color */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; /* Add box shadow */
+    transform: translateY(-2px); /* Move button slightly up */
+}
+
+.dashboard:active,
+.classrecord:active,
+.myprofile:active,
+.myservice:active,
+.class:hover {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Button Disabled State */
+.dashboard:disabled,
+.classrecord:disabled,
+.myprofile:disabled, .class:disabled {
+    pointer-events: none;
+}
+.nosubj {
+    font-size: 16px;
+    color: red;
+}
+
+
+@media (min-width: 50px) and (max-width: 1050px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .dashboard,
+    .classrecord,
+    .class,
+    .myprofile,
+    .myservice {
+        font-size: 2vw; /* Adjust the font size based on the viewport width */
+        height: 8vh; /* Adjust the height based on the viewport height */
+        width: 20%; /* Adjust the width based on the viewport width */
+        position: absolute;
+        border-radius: 15px;
+        transform: translateX(15%); /* Center the elements horizontally */
+    }
+
+    .dashboard {
+        left: 0; /* Center the element */
+    }
+
+    .classrecord {
+        left: 25%; /* Center the element */
+    }
+
+    .class {
+        left: 50%; /* Center the element */
+    }
+
+    .myprofile {
+        left: 75%; /* Center the element */
+    }
+    .myservice {
+        left: 100%; /* Center the element */
+    }
+}
+
+@media (min-width: 10px) and (max-width: 1050px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7{
+        font-size: 50px;
+        height: 20%;
+    }
+    .box3, .box4 {
+        top:65%;
+    }
+    .box5, .box6 {
+        top:90%;
+    }
+    .boxer{
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 380px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7{
+        font-size: 30px;
+        height: 20%;
+    }
+    .boxer{
+        font-size: 40px;
+    }
+}
+

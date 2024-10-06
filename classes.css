@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */
+    
+}
+
+.table-container {
+    position: absolute;          /* Keep the table positioned relative to the viewport */
+    top: 33%;                    /* Maintain vertical placement */
+    left: 50%;                   /* Center horizontally */
+    transform: translateX(-50%); /* Correct horizontal centering */
+    width: 80%;                  /* Set a fixed width for the container */
+    max-width: 1500px;          /* Limit max width for larger screens */
+    min-width: 300px;           /* Set a minimum width for smaller screens */
+    margin: 0 auto;              /* Center the container horizontally */
+    padding: 10px;               /* Optional: padding for better spacing */
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px; /* Optional: Add shadow for better visibility */
+}
+
+/* Adjust table styles */
+table {
+    border-radius: 20px;
+    border-collapse: collapse;
+    width: 100%;                 /* Ensure table fills its container */
+    font-size: 20px;
+    overflow-y: auto;            /* Add vertical scrollbar if content exceeds max height */
+    z-index: 1;                  /* Set a positive z-index for visibility */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;     /* Optional: add background color */
+}
+
+/* Responsive adjustments for table */
+@media (max-width: 768px) {
+    .table-container {
+        width: 90%;               /* Slightly wider on smaller screens */
+        padding: 5px;            /* Reduced padding on smaller screens */
+    }
+
+    table {
+        font-size: 16px;         /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .table-container {
+        top: 30%;                 /* Adjust vertical placement */
+        min-width: 280px;        /* Further reduce minimum width */
+    }
+
+    table {
+        font-size: 14px;         /* Smaller font size for very small screens */
+    }
+}
+
+
+
+ .classesbutton{
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+ }
+
+ .classesbutton1{
+    position: absolute;
+    top: 18%;
+    left: 14%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+ }
+
+ .classesbutton2{
+    position: absolute;
+    top: 18%;
+    left: 24%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+ }
+/* Button Styles */
+.dashboard,
+.classrecord,
+.myprofile, .class {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    text-align: center; /* Center align text */
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 8%; /* Adjusted width */
+    height: 4%; /* Adjusted height */
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 4%; /* Match height of the button */
+    padding: 0; /* Remove padding */
+}
+
+.dashboard {
+    top: 18%;
+    left: 4%;
+    background-color: #f9dddd;
+}
+
+.classrecord {
+    top: 18%;
+    left: 14%;
+    background-color: #f9dddd;
+}
+
+
+.class {
+    top: 18%;
+    left: 24%;
+    background-color: #f9dddd;
+}
+
+.myprofile {
+    top: 18%;
+    right: 1%;
+    background-color: #9CDBC8;
+}
+
+/* Button Hover and Active States */
+.dashboard:hover,
+.classrecord:hover,
+.myprofile:hover,
+.class:hover  {
+    color: #fff;
+    background-color: #F6CC84;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.dashboard:active,
+.classrecord:active,
+.myprofile:active
+.class:hover {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Button Disabled State */
+.dashboard:disabled,
+.classrecord:disabled,
+.myprofile:disabled, .class:disabled {
+    pointer-events: none;
+}
+.nosubj {
+    font-size: 16px;
+    color: red;
+}
+
+
+.class {
+    color: #fff; /* Change text color to white */
+    background-color: #F6CC84; /* Change background color */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; /* Add box shadow */
+    transform: translateY(-2px); /* Move button slightly up */
+}
+ @media (max-width: 1050px) {
+    .header {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 1050px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .classesbutton,
+    .classesbutton1,
+    .classesbutton2,
+    .myprofile {
+        font-size: 2vw; /* Adjust the font size based on the viewport width */
+        height: 8vh; /* Adjust the height based on the viewport height */
+        width: 20%; /* Adjust the width based on the viewport width */
+        position: absolute;
+        border-radius: 15px;
+        transform: translateX(15%); /* Center the elements horizontally */
+    }
+
+    .classesbutton {
+        left: 0; /* Center the element */
+    }
+
+    .classesbutton1 {
+        left: 25%; /* Center the element */
+    }
+
+    .classesbutton2 {
+        left: 50%; /* Center the element */
+    }
+
+    .myprofile {
+        left: 75%; /* Center the element */
+    }
+}

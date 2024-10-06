@@ -1,0 +1,414 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 2px 20px rgba(6, 8, 1, 0.6);
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+
+.header img {
+    width: 350px; /* Adjust the width of the image */
+    height: 100px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */
+    font-family: "Lilita One", sans-serif;
+}
+
+.containerlogin {
+    border: 2px solid #9474A8;
+    border-radius: 10px;
+    background-color: #F6CC84; /* Adjusted transparency to 50% */
+    position: absolute;
+    width: 80%;
+    max-width: 756px;
+    height: 55vh;
+    top: 30%;
+    right: 5%;
+    font-family: "Lilita One", sans-serif;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.containerlogin input[type="text"],
+.containerlogin input[type="password"] {
+    width: 80%;
+    left: 10%;
+    height: auto; /* Let height adapt based on content */
+    padding: 15px; /* Add some padding */
+    border-radius: 5px;
+    position: absolute;
+    font-size: 45px; /* Default large font size */
+}
+
+.containerlogin input[type="submit"] {
+    position: absolute;
+    width: 20%;
+    left: 80%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(33, 206, 84);
+    border: none; /* Remove default button border */
+    color:black; /* Text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor style */
+    
+}
+
+
+.button-61 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto,sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform,opacity;
+}
+
+.button-61:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-61:disabled {
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
+  color: rgba(0, 0, 0, .37);
+  cursor: default;
+  pointer-events: none;
+}
+
+.button-61:not(:disabled) {
+  background-color: #6200ee;
+}
+
+.button-61:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-61:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #A46BF5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hover effect */
+.containerlogin input[type="submit"]:hover {
+    background-color: rgb(26, 163, 67); /* Darker green on hover */
+}
+
+.containerlogin p {
+    position: relative;
+    font-size: 23px;
+    left: 10%;
+}
+
+.teacherlogo {
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    width: 30%;
+}
+
+
+.logincontainertxt {
+    position: absolute;
+    text-align: center;
+    width: 35%; 
+    top: 60%; 
+    left: 5%; 
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif; 
+}
+
+
+@media (max-width: 1400px) {
+    .containerlogin {
+        width: 90%;
+        height: 300px;
+        position: absolute;
+        top: 60%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    .containerlogin input[type="text"],
+    .containerlogin input[type="password"] {
+    width: 75%;
+    left: 10%;
+    }
+
+    .containerlogin input[type="submit"] {
+        top: 250px;
+        left: 50%;
+        }
+
+    .logincontainertxt {
+        width: 80%; 
+        top: 80%; 
+        left: 5%;
+        margin: auto; 
+    }
+    .teacherlogo {
+        position: absolute;
+        top: 27%;
+        left: 50%; 
+        width: 150px;
+        transform: translate(-50%, -50%); 
+    }
+}
+
+@media (min-width: 810px) and (max-width: 815px) {
+    .teacherlogo {
+        display:none;
+    }
+    .containerlogin {
+        width: 90%;
+        height: 300px;
+        position: absolute;
+        top: 300px; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    .logincontainertxt {
+        width: 80%; 
+        top: 470px; 
+        left: 5%;
+        margin: auto; 
+    }}
+
+@media (min-width: 736px) and (max-width: 740px) {
+        .teacherlogo {
+            display:none;
+        }
+        .containerlogin {
+            width: 90%;
+            height: 300px;
+            position: absolute;
+            top: 300px; 
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+        .logincontainertxt {
+            width: 80%; 
+            top: 470px; 
+            left: 5%;
+            margin: auto; 
+        }
+    }   
+
+@media (min-width: 800px) and (max-width: 810px) {
+        .teacherlogo {
+            display:none;
+        }
+        .containerlogin {
+            width: 90%;
+            height: 300px;
+            position: absolute;
+            top: 300px; 
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+        .logincontainertxt {
+            width: 80%; 
+            top: 470px; 
+            left: 5%;
+            margin: auto; 
+        }}    
+
+@media (min-width: 375px) and (max-width: 380px) {
+    .teacherlogo {
+        position: absolute;
+        top: 25%;
+        left: 50%; 
+        width: 130px;
+        transform: translate(-50%, -50%); 
+    }
+    .logincontainertxt {
+        width: 80%; 
+        top: 85%; 
+        left: 5%;
+        margin: auto; 
+    }
+}
+
+@media (min-width: 665px) and (max-width: 670px) {
+    .teacherlogo {
+        display:none;
+    }
+    .containerlogin {
+        width: 90%;
+        height: 300px;
+        position: absolute;
+        top: 300px; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    .logincontainertxt {
+        width: 80%; 
+        top: 470px; 
+        left: 5%;
+        margin: auto; 
+    }}    
+
+@media (min-width: 318px) and (max-width: 325px) {
+    .containerlogin {
+        width: 90%;
+        height: 300px;
+        position: absolute;
+        top: 60%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    .containerlogin input[type="text"],
+    .containerlogin input[type="password"] {
+    width: 75%;
+    left: 10%;
+    }
+
+    .containerlogin input[type="submit"] {
+        top: 250px;
+        left: 50%;
+        }
+
+    .logincontainertxt {
+        width: 80%; 
+        top: 90%; 
+        left: 5%;
+        margin: auto; 
+    }
+    .teacherlogo {
+        position: absolute;
+        top: 25%;
+        left: 50%; 
+        width: 80px;
+        transform: translate(-50%, -50%); 
+    }
+}
+
+@media (min-width: 560px) and (max-width: 570px) {
+    .teacherlogo {
+        display:none;
+    }
+    .containerlogin {
+        width: 90%;
+        height: 300px;
+        position: absolute;
+        top: 300px; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    .logincontainertxt {
+        width: 80%; 
+        top: 470px; 
+        left: 5%;
+        margin: auto; 
+    }}    
+
+    /*
+classes
+*/
+
+.classesbutton{
+    position: absolute;
+    top:22%;
+    left:4%;
+    width: 8%;
+    height: 50px;
+    border-radius: 5px;
+}
+.classesbutton1{
+    position: absolute;
+    top:22%;
+    left:14%;
+    width: 8%;
+    height: 50px;
+    border-radius: 5px;
+}
+.classesbutton2{
+    position: absolute;
+    top:22%;
+    left:24%;
+    width: 8%;
+    height: 50px;
+    border-radius: 5px;
+}
+.table{
+    border: 2px solid black;
+    position: absolute;
+    top: 35%;
+    left: 3%;  
+    width: 1500px;    
+}
+.table th{
+    width: 10%;
+    font-size: 23px;
+    background-color:gray;
+}
+
+.table td{
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+@media (max-width: 1050px) {
+    .header {
+        font-size: 30px;
+    }
+}

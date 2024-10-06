@@ -1,0 +1,325 @@
+
+*{
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */ 
+}
+.box1 {
+    position: absolute;
+    border-radius: 10px;
+    top: 40%;
+    width: 42.5%;
+    height: 30.5%;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
+    left: 7%;
+    border: black solid;
+    background-color: #9AD0C2;
+    background-size: contain; /* Scale the image to fit inside the box while maintaining its aspect ratio */
+    background-position: right center; /* Position the image to the right and center vertically */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 10px; /* Add padding around the text */
+    box-sizing: border-box; /* Include padding and border in the total width and height */
+}
+
+
+
+/* sample code na magpapaganda sa subjects
+.box1 {
+    position: absolute;
+    border-radius: 10px;
+    top: 40%;
+    width: 42%;
+    height: 30%;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    left: 7%;
+    border: 2px solid #000;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+*/
+
+.box2 {
+    position: absolute;
+    border-radius: 10px;
+    top: 40%;
+    width: 42.5%;
+    height: 30.5%;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    right: 7%;
+    border: black solid;
+    background-color: #9AD0C2;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box3 {
+    position: absolute;
+    top: 74%;
+    width: 42.5%;
+    height: 30.5%;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 7%;
+    border-radius: 10px;
+    border: black solid;
+    background-color: #D9D9D9;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box4 {
+    position: absolute;
+    top: 74%;
+    width: 42.5%;
+    height: 30.5%;
+    font-size: 60px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    right: 7%;
+    border: black solid;
+    background-color: #D9D9D9;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box5 {
+    position: absolute;
+    top: 109%;
+    width: 42.5%;
+    height: 30.5%;
+    font-size: 60px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 7%;
+    border: black solid;
+    background-color: #D9D9D9;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box6 {
+    position: absolute;
+    top: 109%;
+    font-size: 60px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 42.5%;
+    height: 30.5%;
+        right: 7%;
+    border: black solid;
+    background-color: #D9D9D9;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.boxer{
+    position: absolute;
+    top: 28%;
+    width: 42%;
+    font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30%;
+    left: 5%;
+}
+
+.dashboard {
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    width: 8%;
+    height: 6%;
+    min-width: 50px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.classrecord,
+.class,
+.myprofile,
+.tutor {
+    position: absolute;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.classrecord {
+    top: 18%;
+    left: 14%;
+}
+
+.class {
+    top: 18%;
+    left: 24%;
+}
+
+.myprofile {
+    top: 18%;
+    right: 1%;
+}
+
+.tutor {
+    top: 18%;
+    right: 11%;
+}
+
+.nosubj {
+    font-size: 16px;
+    color: red;
+}
+
+
+
+/* Style the class boxes */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    line-height: 100px;
+}
+
+#searchSuggestions {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    overflow-y: auto;
+    max-height: 150px; /* Adjust max-height as needed */
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Style the search suggestion items */
+.suggestion-item {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f2f2f2;
+}
+
+
+
+
+@media (min-width: 50px) and (max-width: 1050px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .dashboard,
+    .classrecord,
+    .class,
+    .myprofile,
+    .tutor {
+        font-size: 2vw; /* Adjust the font size based on the viewport width */
+        height: 8vh; /* Adjust the height based on the viewport height */
+        width: 20%; /* Adjust the width based on the viewport width */
+        position: absolute;
+        border-radius: 15px;
+        transform: translateX(15%); /* Center the elements horizontally */
+    }
+
+    .dashboard {
+        left: 0; /* Center the element */
+    }
+
+    .classrecord {
+        left: 25%; /* Center the element */
+    }
+
+    .class {
+        left: 50%; /* Center the element */
+    }
+
+    .myprofile {
+        left: 75%; /* Center the element */
+    }
+
+    .tutor {
+        left: 100%; /* Center the element */
+    }
+}
+
+@media (min-width: 10px) and (max-width: 1050px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7{
+        font-size: 50px;
+        height: 20%;
+    }
+    .box3, .box4 {
+        top:65%;
+    }
+    .box5, .box6 {
+        top:90%;
+    }
+    .boxer{
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 380px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7{
+        font-size: 30px;
+        height: 20%;
+    }
+    .boxer{
+        font-size: 40px;
+    }
+}
+

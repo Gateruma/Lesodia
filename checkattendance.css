@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+} 
+
+.header {
+    background-color: #176C65;
+    color: black;
+    font-size: 2.54vw; 
+    font-weight: bolder;
+    padding: 2vw; /* Using 'vw' for padding */
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+        img {
+            position: absolute;
+            right: 9%;
+            width: 30px;
+            top: 38px;
+        }
+
+        .img2 {
+            position: absolute;
+            right: 4%;
+            width: 35px;
+            top: 35px;
+        }
+
+        .classesbutton{
+            position: absolute;
+            top: 18%;
+            left: 4%;
+            width: 8%;
+            height: 6%;
+            border-radius: 15px;
+         }

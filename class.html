@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="class.css">
+    <title>Document</title>
+</head>
+<body>
+    <p class="header">KlaseMo</p>
+    <div class="date" id="subjectName"> Filipino class <time and date></time> </div>
+    <div class="backcontainer">
+        <div class="attendancebutton" onclick="redirectToCheckAttendance()">
+             Check Attendance 
+        </div> 
+        <div class="camerascreen"></div>
+        <div class="screencontent"> </div>    
+    </div>
+
+    <div class="boxuser">    
+        <div class="controlbutton">
+            <img class="camera" src="switch-camera.png">
+            <img class="camera" src="share.png">
+            <img class="camera" src="mute.png" alt="Mute/Unmute">
+            <img class="camera" src="comment.png">
+            <img class="camera" src="endcall.png">
+        </div>
+
+        <div class="participant">
+            <div class="participantname"> user </div>    
+        </div>
+        <div class="participant1">
+            <div class="participantname1"> user1 </div>    
+        </div>
+        <div class="participant2">
+            <div class="participantname2"> user2 </div>
+        </div>
+        <div class="participant3">
+            <div class="participantname3"> user3 </div>    
+        </div>
+        <div class="participant4"> 
+            <div class="participantname4"> user4 </div>
+        </div>
+        <div class="participant5">
+            <div class="participantname5"> user5 </div> 
+        </div>
+
+    </div>
+
+    <script>
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                const video = document.createElement('video');
+                video.srcObject = stream;
+                video.play();
+                document.querySelector('.camerascreen').appendChild(video);
+            } catch (error) {
+                console.error("Error accessing camera:", error);
+            }
+        }
+    
+        function redirectToCheckAttendance() {
+            window.location.href = 'checkattendance.php';
+        }
+
+        function getSubjectNameFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const subjectName = urlParams.get('subject');
+            return subjectName;
+        }
+
+        function setSubjectName() {
+            const subjectName = getSubjectNameFromURL();
+            if (subjectName) {
+                document.getElementById('subjectName').innerHTML = `${subjectName} class`;
+            }
+        }
+
+        startCamera();
+        setSubjectName();
+    </script>
+
+</body>
+</html>

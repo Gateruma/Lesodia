@@ -1,0 +1,168 @@
+
+*{
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.dashboard {
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    width: 8%;
+    height: 6%;
+    min-width: 50px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.classrecord,
+.class,
+.myprofile {
+    position: absolute;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.classrecord {
+    top: 18%;
+    left: 14%;
+}
+
+.class {
+    top: 18%;
+    left: 24%;
+}
+
+.myprofile {
+    top: 18%;
+    right: 1%;
+}
+
+.title{
+    position: absolute;
+    top: 30%;
+    font-size: 90%;
+    left: 5%;
+    width: 90%;
+    height: 65px;
+    text-align: start;
+    font-size: 10vh;
+    line-height: 70px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    background-color: white;
+    position: absolute;
+    top: 47%;
+    left: 7.5%;
+    width: 85%;
+    height: auto; /* Allow the height to adjust based on content */
+    text-align: start;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.5; /* Use unitless value for line-height */
+}
+
+
+.return-button {
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+}
+
+.submissions {
+    position: absolute;
+    top: 18%;
+    right: 4%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+}
+
+.assign{
+        position: absolute;
+        top: 18%;
+        right: 14%;
+        width: 8%;
+        height: 6%;
+        border-radius: 15px;
+}
+
+
+
+.line {
+    background-color: #86A789;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    height: 10px;
+    text-align: start;
+    line-height: 50px;
+    border-radius: 20px;
+}
+.file {
+    position: absolute;
+    top: 45%;
+    left: 50%; /* Center the container horizontally */
+    transform: translateX(-50%); /* Center the container horizontally */
+    width: 800px; /* Adjust the width according to your preference */
+    height: 450px; /* Adjust the height according to your preference */
+    background-color: blue;
+    overflow: hidden; /* Ensure that video content does not overflow */
+}
+
+.file video {
+    width: 100%; /* Make the video fill the container */
+    height: 100%; /* Make the video fill the container */
+    object-fit: cover; /* Ensure the video covers the entire container */
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Ensure a high z-index value */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    justify-content: center;
+    align-items: center; /* Center the modal vertically */
+}
