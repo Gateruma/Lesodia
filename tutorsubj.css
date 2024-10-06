@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+body {
+    background-color: #edf5fd; /* Light blue tone for a soft feel */
+    margin-top: 110px; /* Adjusted to push the body content below the fixed header */
+    padding: 20px; /* Add padding around the content */
+    display: flex;
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure full height for vertical centering */
+}
+
+table {
+    width: 100%;
+    max-width: 800px; /* Limit the max width for larger screens */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white; /* Table background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip corners for rounded effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increased padding for better spacing */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px; /* Margin around buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Max width for larger screens */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Spacing above button */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        font-size: 30px; /* Reduce font size on smaller screens */
+    }
+
+    .header img {
+        width: 250px; /* Resize logo for tablets */
+    }
+
+    table {
+        width: 90%; /* Table width on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        font-size: 24px; /* Further reduce font size for mobile */
+        padding: 10px 0;
+    }
+
+    .header img {
+        width: 180px; /* Smaller logo size for mobile */
+    }
+
+    table {
+        width: 100%; /* Table takes full width on mobile */
+    }
+}

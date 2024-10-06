@@ -1,0 +1,106 @@
+/* styles.css */
+
+/* General table styles */
+table {
+    width: 90%; /* Increased width for better fit */
+    margin: 20px auto; /* Centers the table horizontally */
+    border-collapse: collapse;
+    table-layout: fixed; /* Use fixed table layout to distribute cell width evenly */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light gray border for cells */
+    padding: 10px 15px; /* Increase padding for better spacing */
+    text-align: left; /* Align text to the left */
+    word-wrap: break-word; /* Allow long content to wrap within cells */
+    font-family: 'Arial', sans-serif; /* Set font family */
+}
+
+th {
+    background-color: #f7f7f7; /* Light gray background for headers */
+    font-weight: bold; /* Bold font for headers */
+    color: #333; /* Darker text color for headers */
+    text-transform: uppercase; /* Uppercase text for headers */
+}
+
+td {
+    background-color: #fff; /* White background for table data */
+    color: #555; /* Slightly darker text color for better readability */
+    font-size: 16px; /* Font size for table data */
+}
+
+/* Style the cells in the bottom-left-table */
+.bottom-left-table td {
+    padding: 10px 15px; /* Increased padding for better readability */
+    border: 1px solid #ddd; /* Light gray border for cells */
+}
+
+/* Specify specific column sizes */
+.bottom-left-table td:nth-child(1) {
+    width: 20%; /* Set the width for the first column */
+}
+
+.bottom-left-table td:nth-child(2) {
+    width: 30%; /* Set the width for the second column */
+}
+
+.bottom-left-table td:nth-child(3),
+.bottom-left-table td:nth-child(4) {
+    width: 25%; /* Set the width for the third and fourth columns */
+}
+
+/* Container for content below the fixed table */
+.content-container {
+    max-height: calc(100vh - 670px); /* Set max height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin: 20px auto; /* Center the container horizontally */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: fixed;
+    right: 20px;
+    top: 20px; /* Adjust top position as needed */
+    background-color: #f7f7f7; /* Light gray background for dropdown */
+    padding: 10px 15px; /* Padding for dropdown */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.dropdown label {
+    font-weight: bold; /* Bold label */
+    margin-right: 10px; /* Space between label and dropdown */
+}
+
+.dropdown select {
+    padding: 5px 10px; /* Padding for dropdown */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Enhancements for a better visual experience */
+body {
+    background-color: #f0f2f5; /* Light background color for the page */
+    font-family: 'Arial', sans-serif; /* Set font family for the page */
+    color: #333; /* Set a dark text color for the page */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the content */
+}
+
+h2 {
+    text-align: center; /* Center the headings */
+    color: #333; /* Dark text color for headings */
+    margin: 20px 0; /* Spacing around headings */
+    font-family: 'Arial', sans-serif; /* Set font family for headings */
+}
+
+caption {
+    text-align: left; /* Align caption text to the left */
+    font-weight: bold; /* Bold font for caption */
+    font-size: 18px; /* Increase font size for caption */
+    margin-bottom: 10px; /* Space below caption */
+    color: #333; /* Dark text color for caption */
+}

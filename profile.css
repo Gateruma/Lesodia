@@ -1,0 +1,428 @@
+
+*{
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */
+    
+}
+
+
+.return {
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    width: 8%;
+    height: 6%;
+    min-width: 50px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /* Adjusted width */
+    max-height: 500px; /* Adjusted max height */
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.logout {
+    position: absolute;
+    top: 18%;
+    right: 4%;
+    width: 8%;
+    height: 6%;
+    background-color: #FF5959;
+    min-width: 50px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.mystudents {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    width: 8%;
+    height: 6%;
+    min-width: 50px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.myclasses {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    width: 8%;
+    height: 6%;
+    min-width: 50px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.mysubjects{
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    width: 8%;
+    height: 6%;
+    min-width: 50px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+
+.profilepic {
+    border-radius: 50%; /* Create a circular shape */
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border: 2px solid #fff; /* Optional: Add a border around the profile picture */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+    position: absolute;
+    top: 290px;
+    left: 70px;
+}
+
+.profilepic img {
+    width: 200px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.profiletext {
+    position: absolute;
+    top: 40%;
+    font-size: 70px;
+    left: 300px; /* Adjust the left position as needed */
+    width: 20%; /* Set the width of the text box */
+    text-align: left; /* Center the text within the box */
+    color: #333; /* Set the text color */
+}
+
+.profiletext p {
+    font-size: 20px;
+    margin: 0; /* Remove default margin */
+}
+
+.profiletext .p2 {
+    font-size: 20px;
+    margin-top: 10px; /* Add some spacing between paragraphs */
+}
+
+
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    position: absolute;
+    top: 650px;
+    left: 9%;
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table horizontally */
+}
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.addsubject{
+    position: absolute;
+    top: 596px;
+    right: 18%;
+    width: 6%;
+    height: 4%;
+    min-width: 50px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.buttonn{
+    position: absolute;
+    top: 596px;
+    right: 11%;
+    width: 6%;
+    height: 4%;
+    min-width: 50px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    border-radius: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Adds an ellipsis (...) to indicate text overflow */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+
+
+
+.edit {
+    font-size: 28px;
+}
+
+
+.add{
+    position: fixed;
+    top: 45%;
+    width: 4%;
+    left: 30%;
+}
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    height: 280px;
+    text-align: center; /* Center the content horizontally */
+    border-radius: 20px;
+}
+
+.modal-content h2 {
+    margin: 0; /* Remove default margin for h2 */
+    margin-top: 30px; /* Add margin to the top of the text input */
+
+}
+
+.modal-content input[type="text"] {
+    width: 80%; /* Adjust the width as needed */
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 50px; /* Add margin to the top of the text input */
+}
+
+.modal-content button {
+    width: 25%; /* Adjust the width as needed */
+    height: 50px;
+    font-size: 15px;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.modal-content .buttonsub {
+    margin-top: 20px;
+    height: 34px;
+}
+
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 1300px){
+
+    .profilepic {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .profiletext {
+        position: absolute;
+        top: 420px;
+        left: 28%; /* Adjusted to center horizontally */
+        font-size: 30px;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row; /* Set flex direction to row for horizontal layout */
+        align-items: center; /* Center items vertically */
+    }
+    
+    .profiletext p {
+        font-size: 20px; /* Adjust the font size as needed */
+        margin-right: 20px; /* Adjust the margin between elements as needed */
+    }
+
+    .mystudents, .myclasses, .mysubjects{
+        top:550px;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 760px){
+
+    .mystudents, .myclasses, .mysubjects{
+        font-size: 2vw;
+    }
+
+    .mystudents{
+        font-size: 2vw;
+    }
+    .myclasses{
+        font-size: 2vw;
+        left: 30%;
+    }
+    .mysubjects{
+        font-size: 2vw;
+        left: 50%;
+    }
+    .modalbox{
+        height: 400px ;
+        position: 20px;
+    }
+    .add-button {
+        font-size: 2vw;
+    }
+}
+
+
+
+@media (min-width: 760px) and (max-width: 1300px){
+
+    .modalbox{
+        height: 400px ;
+        position: 20px;
+    }
+
+}

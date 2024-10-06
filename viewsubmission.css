@@ -1,0 +1,763 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf5fd; /* Warm color - Light Salmon */
+}
+
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-size: 2.54vw; 
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+}
+
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+.content {
+    margin-top: 80px; /* Adjust according to the height of the header */
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #176C65;
+    color: white;
+}
+
+.return-button {
+    background-color: #176C65;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background-color: #13514B;
+}
+
+
+
+
+
+.box {
+    position: fixed;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+    background-color: black;
+    width: 70%;
+    height: 40%;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+
+.boxline{
+    position: absolute;
+    bottom: 91%;
+    width: 100%;
+    height: 11%;
+    background-color: #d1d1d1;
+}
+.answer-content {
+    position: relative; /* Change position to relative */
+    top: 53%; /* Move content down by 50% of its container */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Move content to center horizontally and vertically */
+    width: 98%; /* Set width to 80% */
+    height: 90%;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+
+.essay-id{
+    position: fixed;
+    top: 50%;
+    left: 20%;
+}
+
+.student-id{
+    position: fixed;
+    top: 30%; /* Position the element 50% from the top of the viewport */
+    left: 32%; /* Position the element 50% from the left of the viewport */
+    transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.question-content {
+    position: fixed;
+    font-size: 22px;
+    top: 36%;
+    left: 15%;
+    max-width: 70%;
+    width: auto;
+    padding: 10px; /* Add padding to prevent content from touching the border */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    overflow-x: auto; /* Add horizontal scroll if content overflows */
+    word-wrap: break-word; /* Break words to prevent overflow */
+}
+
+.linames {
+    position: fixed;
+    top: 30%; /* Position the element 30% from the top of the viewport */
+    left: 50%; /* Position the element 50% from the left of the viewport */
+    transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+    height: 50px;
+    width: 80%; /* Adjusted width */
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+.submissiondate {
+    position: fixed;
+    top: 30%; /* Position the element 30% from the top of the viewport */
+    left: 80%; /* Position the element 60% from the left of the viewport */
+    transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+}
+
+
+.score-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+    color: white;
+    background: transparent;
+    outline: none;
+}
+
+.submitbutt {
+    position: fixed;
+    right: -10%;
+    width: 10%;
+    top: 120%;
+    height: 13%;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.score-value {
+    font-size: 56px;
+    position: absolute;
+    bottom: 7%;
+    right: 2%;
+    width: 9%;
+    height: 30%;
+    border-radius: 15px;
+    padding: 5px;
+    z-index: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+
+.scorebox {
+    font-size: 56px;
+    position: absolute;
+    bottom: 7%;
+    right: 14%;
+    width: 9%;
+    height: 30%;
+    border-radius: 15px;
+    padding: 5px;
+    z-index: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash {
+    font-size: 56px;
+    position: absolute;
+    bottom: 7%;
+    right: 8%;
+    width: 9%;
+    height: 30%;
+    border-radius: 15px;
+    padding: 5px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.box1modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%; /* Cover the entire width of the viewport */
+    height: 50%; /* Cover the entire height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.box1modal .modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 20px;
+    width: 70%; /* Adjust width as needed */
+    max-width: 600px; /* Set maximum width */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box1modal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.box1modal .titletext {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%; /* Move to the center horizontally */
+    top: 23%; /* Move to the center vertically */
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+}
+
+.box1modal .instruction{
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    top: 70%;
+    position: absolute;
+}
+
+
+.box1modal .container {
+    width: 80%;
+    padding: 10px;
+    margin: 5px auto; /* Center horizontally with auto margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%; /* Move to the center horizontally */
+    top: 50%; /* Move to the center vertically */
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+}
+
+
+.box1modal .deadline{
+    width: 20%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    bottom: 10%;
+    position: absolute;
+    left: 27%;
+
+}
+
+.box1modal .score{
+    width: 20%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    bottom: 10%;
+    position: absolute;
+    left: 50%;
+}
+
+
+
+.box1modal .assessment{
+    font-size: 20px;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+}
+
+.box1modal .instruction{
+    font-size: 20px;
+    position: absolute;
+    top: 28%;
+    left: 9%;
+}
+
+
+
+
+
+.box1modal .add {
+    background-color: #B2F2AD;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 13%; /* Adjust width */
+    height: 10%; /* Adjust height */
+    margin: 20px auto 0; /* Add margin */
+    display: block; /* Ensure it's a block element */
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.returnb {
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.review-button,
+.cancel-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.selstudents {
+    position: absolute;
+    bottom: 13%;
+    left: 10%;
+    height: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.modal1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content1 {
+    background-color: white; /* Set the background color directly */
+    padding: 20px;
+    width: 60%;
+    height: 65%;
+    margin: 10% auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.modal1 h1{
+    position: absolute;
+    font-size: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal1 textarea.container {
+    position: absolute;
+    top: 200px;
+    left: 49%;
+    transform: translateX(-50%);
+    border-color: gray;
+    background-color: rgba(185, 185, 185, 0.42);
+    width: 75%;
+    height: 200px;
+    border: solid black 1px;
+}
+
+.modal1 input[type="text"] {
+    border-color: black;
+    width: 40%;
+    height: 40px;
+    top: 250px;
+    position: fixed;
+    left: 35%;
+    transform: translateX(-15%);
+    background-color: #EEEBEB;
+}
+
+.modal1 .shape {
+    position: absolute;
+    top: 180px;
+    left: 49%;
+    transform: translateX(-50%);
+    border-color: gray;
+    background-color: #BCB1B1;
+    width: 75%;
+    height: 30px;
+    border: 1px;
+}
+
+
+.modal1 .title{
+    position: absolute;
+    left: 15%;
+    top: 76px;
+    font-size: 20px;
+}
+
+
+.modal1 .add {
+    position: fixed;
+    top: 77%;
+    width: 9%;
+    left: 67%;
+    height: 30px;
+    background-color: #B2F2AD;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+.modal-content {
+    background-color: white; /* Set the background color directly */
+    padding: 20px;
+    width: 60%;
+    height: 65%;
+    margin: 10% auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.instruction1{
+    position: fixed;
+    top: 320px;
+    font-size: 20px;
+    left: 26%;
+}
+
+.instruction2{
+    position: fixed;
+    top: 220px;
+    font-size: 20px;
+    left: 27%;
+}
+
+.boxxx {
+    position: fixed;
+    top: 317px;
+    width: 47%;
+    left: 25.9%;
+    height: 5%;
+    background-color: #BCB1B1;
+}
+
+.boxxx input[type="file"]{
+    position: fixed;
+    width: 47%;
+    left: 60%;
+    padding-top: 10px;
+    height: 5%;
+}
+
+
+.file-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-label img {
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    object-fit: contain; /* Adjust as needed */
+}
+
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box1modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+
+
+
+.box1 {
+    position: fixed;
+    height: 15%;
+    width: 15%;
+    left: 23%;
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    font-size: 200%;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    position: fixed;
+    height: 15%;
+    width: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3 {
+    position: fixed;
+    height: 15%;
+    width: 15%;
+    right: 23%;
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4 {
+    position: fixed;
+    height: 15%;
+    width: 15%;
+    left: 23%;
+    background-color: #D9D9D9;
+    margin-top: 150px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box5 {
+    position: fixed;
+    height: 15%;
+    width: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D9D9D9;
+    margin-top: 150px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box6 {
+    position: fixed;
+    height: 15%;
+    width: 15%;
+    right: 23%;
+    background-color: #D9D9D9;
+    margin-top: 150px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box7 {
+    position: fixed;
+    height: 15%;
+    width: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D9D9D9;
+    margin-top: 280px;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.essaytitle {
+    position: absolute;
+    top: 180px;
+    border-radius: 15px;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 6%;
+    background-color: #a8a8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

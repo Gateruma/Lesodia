@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+} 
+
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */ 
+}
+
+
+.center-table {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    width: 50%; /* Adjust the width as needed */
+}
+
+/* Style the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    position: absolute;
+    top: 85px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px; /* Adjusted padding */
+    font-size: 20px;
+    
+}
+
+td {
+    border: 20px solid white ;
+    padding: 20px;
+    border-radius: 50px;
+
+}
+
+tr {
+    background-color: #D9D9D9;
+    height: 40px;
+    margin: 20px ;
+}
+
+.return-button {
+    position: fixed;
+    top: 18%;
+    left: 4%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+}
+
+.submissions {
+    position: absolute;
+    top: 30%; /* Position at 30% from the top */
+    left: 50%; /* Position at 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element */
+    background-color: #F87777;
+    font-size: 32px;
+    text-align: center;
+    width: 84%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.linames{
+    position: fixed;
+    top: 30%; /* Position the element 30% from the top of the viewport */
+    left: 50%; /* Position the element 50% from the left of the viewport */
+    transform: translate(-50%, -50%); /* Move the element back by half of its width and height */
+    height: 50px;
+    width: 80%; /* Adjusted width */
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    font-size: 25px;
+}

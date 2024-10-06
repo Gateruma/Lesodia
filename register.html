@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        /* Add your custom styles here */
+        .parentcontainer,
+        .grade,
+        .grade1,
+        .case {
+            display: none; /* Hide containers and sections by default */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo"> </div>    
+    <div class="container">
+        <form action="insert.php" method="post">
+            <!-- Add a hidden input field for role -->
+            <input type="hidden" id="userRole" name="role" value="teacher">
+
+            <br>
+            <p>First Name</p>
+            <br><br><input type="text" name="firstname">
+            <br><br><br>
+            <p>Last Name</p>
+            <br><br><input type="text" name="lastname">
+            <br><br><br>
+            <p>Username</p>
+            <br><br><input type="text" name="username">
+            <br><br><br>
+
+            <p>Password</p>
+            <br><br><input type="password" name="password">
+            <br><br><br>
+
+            <p>Date of Birth</p>
+            <br><br><input type="date" name="dateofbirth">
+            <br><br><br><input type="email" name="email" placeholder="Email">
+            <p>Gender</p>
+            <label for="gender">\</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <p>Role</p>
+            <div class="container1"> 
+                <br><br><input type="text" name="address" placeholder="Address">
+            </div>
+            
+            <select id="role" name="role" onchange="toggleSections()">
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+                <option value="parent">Parent</option>
+            </select>            
+            <br><br>
+            
+            <!-- Sections for grade, section, and case -->
+            <div class="grade">
+                <label for="grade">Grade level</label>
+                <select id="grade" name="grade">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            
+            <div class="grade1">
+                <select id="case" name="category">
+                    <option value="" disabled selected hidden>Category</option>
+                    <option value="autism">Autism</option>
+                </select>
+            </div>
+
+
+            <button type="submit" class="gg">Sign up</button>
+            
+    </div>
+ 
+    <div class="parentcontainer">
+        <br>
+        <p>Guardian's First Name</p>
+        <br><br><input type="text" name="gfirstname">
+        <br><br><br>
+        <p>Guardian's Last Name</p>
+        <br><br><input type="text" name="glastname">
+        <br><br><br>
+        <p>Guardian's Contact Number</p>
+        <br><br><input type="number" name="gcontact">
+        <input type="email" name="gemail" placeholder="Email">
+        <br><br><br>
+    </div>
+</form>
+
+
+    <script>
+        function toggleSections() {
+            var roleSelect = document.getElementById("role");
+            var gradeSection = document.querySelector(".grade");
+            var sectionSection = document.querySelector(".grade1");
+            var caseSection = document.querySelector(".case");
+            var parentContainer = document.querySelector(".parentcontainer");
+
+            // Show/hide sections and parent container based on the selected role
+            parentContainer.style.display = roleSelect.value === "student" ? "block" : "none";
+            gradeSection.style.display = roleSelect.value === "student" ? "block" : "none";
+            sectionSection.style.display = roleSelect.value === "student" ? "block" : "none";
+            caseSection.style.display = roleSelect.value === "student" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>

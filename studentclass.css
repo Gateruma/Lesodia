@@ -1,0 +1,216 @@
+*{
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */ 
+}
+.table {
+    position: absolute;
+    top: 35%;
+    width: 80%;
+    left: 9%;
+    height: 150px;
+    font-size: 20px;
+    border-collapse: separate; /* Use separate border model */
+    border-spacing: 0 10px; /* Add spacing between rows */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.table th {
+    width: 30%;
+    height: 0%;
+    border-radius: 3px;
+    background-color: #B9B9B9;
+    font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
+}
+
+/* Font for table data (td) */
+.table td {
+    width: 30%;
+    height: 10%;
+    font-family: Arial, sans-serif; /* Apply Arial font */
+}
+
+ .classesbutton{
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+ }
+
+ .classesbutton1{
+    position: absolute;
+    top: 18%;
+    left: 14%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+ }
+
+ .classesbutton2{
+    position: absolute;
+    top: 18%;
+    left: 24%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+ }
+
+/* Button Styles */
+.dashboard,
+.classrecord,
+.myprofile,
+.playground{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    text-align: center; /* Center align text */
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 8%; /* Adjusted width */
+    height: 4%; /* Adjusted height */
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 4%; /* Match height of the button */
+    padding: 0; /* Remove padding */
+}
+
+.dashboard {
+    top: 18%;
+    left: 4%;
+    background-color: #f9dddd;
+}
+
+.classrecord {
+    top: 18%;
+    left: 14%;
+    background-color: #f9dddd;
+}
+
+.playground {
+    top: 18%;
+    left: 24%;
+    background-color: #f9dddd;
+}
+
+.myprofile {
+    top: 18%;
+    right: 1%;
+    background-color: #9CDBC8;
+}
+
+/* Button Hover and Active States */
+.dashboard:hover,
+.classrecord:hover,
+.myprofile:hover,
+.playground:hover  {
+    color: #fff;
+    background-color: #F6CC84;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+.dashboard:active,
+.classrecord:active,
+.myprofile:active,
+.playground:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Button Disabled State */
+.dashboard:disabled,
+.classrecord:disabled,
+.myprofile:disabled,
+.playground:disabled {
+    pointer-events: none;
+}
+
+
+
+
+
+ @media (max-width: 1050px) {
+    .header {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 1050px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .classesbutton,
+    .classesbutton1,
+    .classesbutton2,
+    .myprofile {
+        font-size: 2vw; /* Adjust the font size based on the viewport width */
+        height: 8vh; /* Adjust the height based on the viewport height */
+        width: 20%; /* Adjust the width based on the viewport width */
+        position: absolute;
+        border-radius: 15px;
+        transform: translateX(15%); /* Center the elements horizontally */
+    }
+
+    .classesbutton {
+        left: 0; /* Center the element */
+    }
+
+    .classesbutton1 {
+        left: 25%; /* Center the element */
+    }
+
+    .classesbutton2 {
+        left: 50%; /* Center the element */
+    }
+
+    .myprofile {
+        left: 75%; /* Center the element */
+    }
+}

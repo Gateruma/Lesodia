@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+<body>
+    <p class="header">KlaseMo</p> 
+    
+    <div class="container">
+        <form action="insert.php" method="post">
+            <br>
+            <p>First Name</p>
+            <br><br><input type="text" name="firstname">
+            <br><br><br><br>
+            <p>Last Name</p>
+            <br><br><input type="text" name="lastname">
+            <br><br><br><br>
+            <p>Date of Birth</p>
+            <br><br><input type="date" name="dateofbirth">
+            
+            <br><br><br><input type="email" name="email" placeholder="Email">
+            <p>Gender</p>
+            <label for="gender">\</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <br>
+            <p>Educational Background</p>
+            <br><br><input type="text" name="ebcollege" placeholder="College">
+            <br><br><br><input type="text" name="ebhighschool" placeholder="High School">
+            <br><br><br><input type="text" name="ebelementary" placeholder="Elementary">
+            
+            <br><br><br>
+            
+            <div class="container1"> 
+                <p>Address</p>
+                <br><br><input type="text" name="address" placeholder="Address">
+            </div>
+            
+            <br><br><br>
+            
+            <p>Upload ID</p>
+            <input type="file" name="id_upload">
+            
+            <br><br><br>
+            
+            <button type="submit" class="gg">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

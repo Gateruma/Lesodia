@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px;
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+}
+
+.header img {
+    width: 330px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #edf5fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bond-paper {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    width: 8in;
+    height: 5in;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 35%);
+}
+
+.container {
+    width: 20%;
+    height: 65%;
+    position: absolute;
+    left: 2%;
+    top: 34%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+}
+
+.draggable-shape {
+    width: 45%;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bond-paper .draggable-shape {
+    width: 50px; /* Ensures the size stays the same */
+    height: 50px;
+    margin: 5px; /* Add some margin if needed */
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 0px;
+}
+
+
+.block-image {
+    position: absolute;
+    right: .3%;
+    top: 210px;
+    display: block;       /* Ensures the image is displayed as a block element */
+    width: 370px;
+    height: auto;         /* Maintains the aspect ratio of the image */
+    margin: 0 auto;       /* Centers the image horizontally within its container */
+    border: 2px solid #000; /* Optional: Adds a border to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a lifted effect */
+    border-radius: 5px;   /* Optional: Rounds the corners of the image */
+}
+
+
+
+
+#blockInfo {
+    position: fixed;
+    bottom: 170px;              /* Distance from the bottom */
+    right: 16px;               /* Distance from the right */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd;    /* Light border */
+    border-radius: 8px;        /* Rounded corners */
+    padding: 20px;             /* Padding inside the container */
+    width: 350px;              /* Set width as needed */
+    max-width: 100%;           /* Maximum width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+.return-button {
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    width: 8%;
+    height: 6%;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+}

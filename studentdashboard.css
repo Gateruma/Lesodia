@@ -1,0 +1,458 @@
+
+*{
+    margin:0;
+    padding:0;
+} 
+.header {
+    background-color: #1F6C52;
+    color: black;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 39px; 
+    font-weight: bolder;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px; /* Added padding for spacing around the image */
+} 
+.header img {
+    width: 330px; /* Adjust the width of the image */
+    height: 90px; /* Allow the height to adjust proportionally */
+    display: block; /* Ensures proper block-level display */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+body {
+    background-color: #edf5fd; /* Warm color - Light Salmon */ 
+}
+
+
+.box1 {
+    position: absolute;
+    border-radius: 10px;
+    top: 40%;
+    width: 42.5%;
+    height: 30.5%;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
+    left: 7%;
+    border: black solid;
+    background-color: #9AD0C2;
+    background-image: url('animals/panda.png'); /* Specify the path to your image */
+    background-size: contain; /* Scale the image to fit inside the box while maintaining its aspect ratio */
+    background-position: right center; /* Position the image to the right and center vertically */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 10px; /* Add padding around the text */
+    box-sizing: border-box; /* Include padding and border in the total width and height */
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+.box1:hover {
+    background-color: transparent !important; /* Remove default background color */
+    background-image: url('animals/panda.png'), url('animals/pandaback.jpg'); /* Set two background images */
+    background-size: contain, cover; /* Set the size of each background image */
+    background-position: right , right center; /* Set the position of each background image */
+    background-repeat: no-repeat, no-repeat; /* Prevent the images from repeating */
+    z-index: 22; /* Ensure the panda.png image appears in front */
+}
+
+.box3:hover {
+    background-color: transparent !important; /* Remove default background color */
+    background-image: url('animals/elephant.png'), url('animals/elephantbackground.jpg'); /* Set two background images */
+    background-size: contain, cover; /* Set the size of each background image */
+    background-position: right , right center; /* Set the position of each background image */
+    background-repeat: no-repeat, no-repeat; /* Prevent the images from repeating */
+    z-index: 22; /* Ensure the panda.png image appears in front */
+}
+
+
+
+
+
+
+
+/* sample code na magpapaganda sa subjects
+.box1 {
+    position: absolute;
+    border-radius: 10px;
+    top: 40%;
+    width: 42%;
+    height: 30%;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    left: 7%;
+    border: 2px solid #000;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+*/
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    position: absolute;
+    width: 42.5%;
+    height: 30.5%;
+    font-size: 60px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: black solid;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+.box2 {
+    top: 40%;
+    right: 7%;
+    background-color: #9AD0C2;
+    background-image: url('animals/sheep.png');
+}
+
+.box3 {
+    top: 74%;
+    left: 7%;
+    background-color: #D9D9D9;
+    background-image: url('animals/elephant.png');
+}
+
+.box4 {
+    top: 74%;
+    right: 7%;
+    background-color: #D9D9D9;
+    background-image: url('animals/dog.png');
+}
+
+.box5 {
+    top: 109%;
+    left: 7%;
+    background-color: #D9D9D9;
+}
+
+.box6 {
+    top: 109%;
+    right: 7%;
+    background-color: #D9D9D9;
+}
+
+.box2:hover {
+    background-color: transparent !important; /* Remove default background color */
+    background-image: url('animals/sheep.png'), url('animals/sheepback.jpeg'); /* Set two background images */
+    background-size: contain, cover; /* Set the size of each background image */
+    background-position: right , right center; /* Set the position of each background image */
+    background-repeat: no-repeat, no-repeat; /* Prevent the images from repeating */
+    text-shadow: 0 0 5px white; /* Highlight the text with a white shadow */
+    z-index: 22; /* Ensure the panda.png image appears in front */
+}
+
+
+
+/* Button Hover State */
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover {
+    background-color: #4CAF50; /* Change background color to green on hover */
+}
+
+.boxer{
+    position: absolute;
+    top: 28%;
+    width: 42%;
+    font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30%;
+    left: 5%;
+}
+
+
+
+
+
+/* Add this to your studentdashboard.css file */
+/* Add this to your studentdashboard.css file */
+.teacher-selection {
+    position: absolute;  /* Use absolute positioning */
+    top: 45%;  /* Position 20% from the top of the page */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Adjust horizontal positioning to truly center it */
+    width: 80%;  /* Adjust based on your layout */
+    max-width: 800px;  /* Optional: limit the maximum width */
+    border: 1px solid #ccc;  /* Optional: add a border */
+    border-radius: 8px;  /* Optional: add rounded corners */
+    padding: 20px;  /* Adjust padding as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: add shadow */
+}
+.teacher-selection h2 {
+    margin-bottom: 20px;  /* Space between the heading and table */
+    font-size: 1.5rem;  /* Adjust font size as needed */
+}
+
+.teacher-selection table {
+    width: 100%;  /* Make the table occupy the full width of the container */
+    border-collapse: collapse;  /* Collapse borders to remove spacing */
+}
+
+.teacher-selection th, .teacher-selection td {
+    border: 1px solid #ddd;  /* Border for table cells */
+    padding: 10px;  /* Space within cells */
+    text-align: left;  /* Align text to the left */
+}
+
+.teacher-selection th {
+    background-color: #f4f4f4;  /* Background color for headers */
+}
+
+.teacher-selection tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Alternate row color */
+}
+
+.teacher-selection button {
+    background-color: #007bff;  /* Button background color */
+    color: white;  /* Button text color */
+    border: none;  /* Remove button border */
+    padding: 10px 15px;  /* Button padding */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Change cursor to pointer */
+    font-size: 1rem;  /* Adjust font size */
+}
+
+
+/* Existing styles... */
+
+/* Existing styles... */
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Optional: limit the max width */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Table styles */
+.teacher-selection table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.teacher-selection th, .teacher-selection td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.teacher-selection th {
+    background-color: #f2f2f2;
+}
+
+
+/* Button Styles */
+.dashboard,
+.classrecord,
+.mytutor,
+.myprofile{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    text-align: center; /* Center align text */
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 8%; /* Adjusted width */
+    height: 4%; /* Adjusted height */
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 4%; /* Match height of the button */
+    padding: 0; /* Remove padding */
+}
+
+.dashboard {
+    top: 18%;
+    left: 4%;
+    background-color: #f9dddd;
+}
+
+.classrecord {
+    top: 18%;
+    left: 14%;
+    background-color: #f9dddd;
+}
+
+
+.mytutor
+{
+    top: 18%;
+    left: 24%;
+    background-color: #f9dddd;
+}
+
+.myprofile {
+    top: 18%;
+    right: 1%;
+    background-color: #9CDBC8;
+}
+
+/* Button Hover and Active States */
+.dashboard:hover,
+.classrecord:hover,
+.myprofile:hover
+.mytutor:hover {
+    color: #fff;
+    background-color: #F6CC84;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.dashboard:active,
+.classrecord:active,
+.myprofile:active
+.mytutor:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Button Disabled State */
+.dashboard:disabled,
+.classrecord:disabled,
+.myprofile:disabled 
+.mytutor:disabled{
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 50px) and (max-width: 1050px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .dashboard,
+    .classrecord,
+    .class,
+    .myprofile,
+    .mytutor {
+        font-size: 2vw; /* Adjust the font size based on the viewport width */
+        height: 8vh; /* Adjust the height based on the viewport height */
+        width: 20%; /* Adjust the width based on the viewport width */
+        position: absolute;
+        border-radius: 15px;
+        transform: translateX(15%); /* Center the elements horizontally */
+    }
+
+    .dashboard {
+        left: 0; /* Center the element */
+    }
+
+    .classrecord {
+        left: 25%; /* Center the element */
+    }
+
+    .class {
+        left: 50%; /* Center the element */
+    }
+
+    .myprofile {
+        left: 75%; /* Center the element */
+    }
+}
+
+
+
+
+@media (min-width: 10px) and (max-width: 1050px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7{
+        font-size: 50px;
+        height: 20%;
+    }
+    .box3, .box4 {
+        top:65%;
+    }
+    .box5, .box6 {
+        top:90%;
+    }
+    .boxer{
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 50px) and (max-width: 380px) {
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7{
+        font-size: 30px;
+        height: 20%;
+    }
+    .boxer{
+        font-size: 40px;
+    }
+}
+
